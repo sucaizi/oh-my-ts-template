@@ -12,14 +12,14 @@ npm i @commitlint/cli @commitlint/config-conventional conventional-changelog-cli
 touch .cz-config.js
 touch commitlint.config.js
 
-配置参考：[Cz工具集使用介绍 - 规范Git提交说明](url:https://juejin.im/post/6844903831893966856)
+配置参考：
 
 ### 添加命令 ###
 
 package.json 添加：
 
 ```
-"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+"log": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
 
 
 "config": {
