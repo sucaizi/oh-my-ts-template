@@ -1,0 +1,32 @@
+{
+    "name": "oh-my-ts-template",
+    "version": "1.0.0",
+    "description": "typecript lib/tool template",
+    "main": "index.js",
+    "scripts": {
+        "log": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+    },
+    "keywords": [
+        "typecript",
+        "template"
+    ],
+    "author": "sucaizi",
+    "license": "MIT",
+    "devDependencies": {
+        "@commitlint/cli": "^9.1.1",
+        "@commitlint/config-conventional": "^9.1.1",
+        "conventional-changelog-cli": "^2.1.0",
+        "cz-customizable": "^6.3.0",
+        "husky": "^4.2.5"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-customizable"
+        }
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    }
+}
