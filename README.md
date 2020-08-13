@@ -70,3 +70,21 @@ package.json 添加
 ```
 "build": "rimraf dist types && gulp"
 ```
+
+### 使用 ###
+
+    npm run build
+
+## 代码校验 ##
+
+### 安装 ###
+
+    npm i --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+### 配置 ###
+
+    touch .eslintrc.js
+
+### 添加命令 ### 
+
+     "lint": "eslint src"
