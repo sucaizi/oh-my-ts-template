@@ -14,6 +14,7 @@
     "scripts": {
         "build": "rimraf dist types && gulp",
         "lint": "eslint src",
+        "prettier": "prettier src test --write",
         "changelog": "rimraf CHANGELOG.md && conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
     },
     "keywords": [
@@ -30,10 +31,12 @@
         "conventional-changelog-cli": "^2.1.0",
         "cz-customizable": "^6.3.0",
         "eslint": "^7.6.0",
+        "eslint-config-prettier": "^6.11.0",
         "gulp": "^4.0.2",
         "gulp-typescript": "^6.0.0-alpha.1",
         "husky": "^4.2.5",
         "merge2": "^1.4.1",
+        "prettier": "^2.0.5",
         "rimraf": "^3.0.2",
         "typescript": "^3.9.7"
     },

@@ -85,6 +85,31 @@ package.json 添加
 
     touch .eslintrc.js
 
-### 添加命令 ### 
+### 添加命令 ###
 
      "lint": "eslint src"
+
+### 用法 ###
+
+    npm run lint
+
+## 代码格式化 ##
+
+### 安装 ###
+
+    npm i  prettier eslint-config-prettier --save-dev
+
+### 配置 ###
+
+修改.eslintrc.js, 增加
+
+    "prettier",
+    "prettier/@typescript-eslint",
+
+### 添加命令 ###
+
+```
+"scripts": {
+  "prettier": "prettier src test --write",
+}
+```
