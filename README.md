@@ -18,9 +18,9 @@
 
 配置参考:
 
-[Cz工具集使用介绍 - 规范Git提交说明](url:https://juejin.im/post/6844903831893966856)
+[Cz工具集使用介绍 - 规范Git提交说明](https://juejin.im/post/6844903831893966856)
 
-[commitizen + husky 规范git提交信息](url:https://juejin.im/post/6844904025868271629)
+[commitizen + husky 规范git提交信息](https://juejin.im/post/6844904025868271629)
 
 ### 添加命令 ###
 
