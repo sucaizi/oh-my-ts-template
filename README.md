@@ -127,3 +127,24 @@ package.json 添加
 
     npm run prettier
     npm run lint-strict
+
+## 单元测试 ##
+
+### 安装 ###
+
+   npm i jest @types/jest ts-jest eslint-plugin-jest --save-dev
+
+### 配置 ##
+
+    ./node_modules/jest/bin/jest.js --init
+
+
+### 添加命令 ##
+
+    "test": "jest --bail --coverage"
+
+### 用法 ###
+
+    npm run test
+
+

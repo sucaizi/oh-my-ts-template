@@ -1,6 +1,4 @@
-import great from "./greet";
-
-
+import great from "@/greet";
 
 export default {
   great,
