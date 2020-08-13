@@ -98,6 +98,7 @@ package.json 添加
 ### 安装 ###
 
     npm i  prettier eslint-config-prettier --save-dev
+    npx mrm lint-staged
 
 ### 配置 ###
 
@@ -106,10 +107,23 @@ package.json 添加
     "prettier",
     "prettier/@typescript-eslint",
 
+修改package.json
+
+    "lint-staged": {
+        "*.ts": "npm run lint-strict"
+    }
+
 ### 添加命令 ###
 
 ```
 "scripts": {
   "prettier": "prettier src test --write",
+  "lint-strict": "eslint src --max-warnings 0"
 }
+
 ```
+
+### 用法 ###
+
+    npm run prettier
+    npm run lint-strict
