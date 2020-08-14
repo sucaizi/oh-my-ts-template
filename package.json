@@ -12,12 +12,14 @@
         "types"
     ],
     "scripts": {
-        "prebuild": "npm run lint && npm run test",
+        "prebuild": "npm run lint && npm run prettier && npm run test",
         "build": "rimraf dist types && gulp",
         "lint": "eslint src test --max-warnings 0",
         "prettier": "prettier src test --write",
         "test": "jest --bail --coverage",
-        "version": "rimraf CHANGELOG.md && conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+        "version": "rimraf CHANGELOG.md && conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
     },
     "keywords": [
         "typecript",
@@ -35,6 +37,7 @@
         "cz-customizable": "^6.3.0",
         "eslint": "^7.6.0",
         "eslint-config-prettier": "^6.11.0",
+        "eslint-loader": "^4.0.2",
         "eslint-plugin-jest": "^23.20.0",
         "gulp": "^4.0.2",
         "gulp-typescript": "^6.0.0-alpha.1",
@@ -45,7 +48,11 @@
         "prettier": "^2.0.5",
         "rimraf": "^3.0.2",
         "ts-jest": "^26.2.0",
-        "typescript": "^3.9.7"
+        "typescript": "^3.9.7",
+        "vuepress": "^1.5.3",
+        "vuepress-plugin-cat": "^1.0.3",
+        "vuepress-plugin-mathjax": "^1.2.8",
+        "vuepress-plugin-typescript": "^0.3.0"
     },
     "config": {
         "commitizen": {
@@ -53,7 +60,7 @@
         }
     },
     "husky": {
-        "hooks": {   
+        "hooks": {
             "pre-commit": "lint-staged",
             "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }

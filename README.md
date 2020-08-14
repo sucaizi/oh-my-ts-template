@@ -138,7 +138,6 @@ package.json 添加
 
     ./node_modules/jest/bin/jest.js --init
 
-
 ### 添加命令 ##
 
     "test": "jest --bail --coverage"
@@ -148,3 +147,17 @@ package.json 添加
     npm run test
 
 
+## 文档配置 ##
+
+### 安装 ###
+
+    npm install vuepress vuepress-plugin-cat vuepress-plugin-mathjax vuepress-plugin-typescript --save-dev
+
+### 配置 ###
+
+    mkdir docs
+
+### 添加命令 ###
+
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"

@@ -12,3 +12,7 @@ jest.config.js
 
 # build
 dist
+
+# doc
+docs
+docs/.vuepress
