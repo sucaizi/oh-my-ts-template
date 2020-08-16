@@ -161,3 +161,8 @@ package.json 添加
 
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
+
+
+## 参考 ##
+
+[从零开始配置 TypeScript 项目](https://github.com/ziyi2/algorithms/tree/feat/framework)

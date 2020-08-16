@@ -1,6 +1,5 @@
 ---
 home: true
-# heroImage: /hero.png
 heroText: ts-template
 tagline: TypeScript 库模版
 actionText: 开始学习
